@@ -1,0 +1,16 @@
+@import "abstracts/var.scss";
+@import "abstracts/mixins.scss";
+
+@import "base/base.scss";
+@import "base/typography.scss";
+
+// @import "vendors/slick-theme.scss";
+
+@import "partials/header.scss";
+@import "partials/first-view.scss";
+@import "partials/catalog.scss";
+@import "partials/delivery.scss";
+@import "partials/contacts.scss";
+@import "partials/footer.scss";
+@import "partials/popup.scss";
+@import "partials/order-list.scss";

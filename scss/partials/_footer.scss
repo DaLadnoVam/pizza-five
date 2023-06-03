@@ -1,0 +1,24 @@
+.footer {
+  position: relative;
+  max-width: 100%;
+  background: $color-text;
+  padding: 10px 20px;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer__item {
+  display: block;
+  margin: 0 20px;
+
+  img {
+    @media (max-width: 767px) {
+      height: 30px;
+    }
+  }
+}

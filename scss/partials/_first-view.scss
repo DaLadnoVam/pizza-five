@@ -1,0 +1,70 @@
+.first-view {
+  width: 100%;
+  overflow: hidden;
+}
+
+.first-view__slick {
+  padding: 79px 165px 0 165px;
+  width: 100%;
+
+  .slick__item__img {
+    display: block;
+    max-width: 100%;
+    height: 567px;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+
+    img {
+      @include block(block, 100%, 100%);
+      object-fit: cover;
+    }
+
+    @media (max-width: 767px) {
+      height: 210px;
+    }
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 46px 0 0 0;
+    cursor: pointer;
+
+    li {
+      @include block(block, 30px, 30px);
+      background: #d9d9d9;
+      border: 3px dashed $color-accent;
+      border-radius: 50%;
+      margin: 0 35px;
+
+      button {
+        display: none;
+      }
+
+      &.slick-active {
+        background: $color-accent;
+      }
+
+      @media (max-width: 767px) {
+        width: 10px;
+        height: 10px;
+        margin: 0 7px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      margin: 20px 0 0 0;
+    }
+  }
+
+  @media (max-width: 1439px) {
+    padding: 50px 80px 0 80px;
+  }
+  @media (max-width: 1023px) {
+    padding: 40px 60px 0 60px;
+  }
+  @media (max-width: 767px) {
+    padding: 60px 20px 0 20px;
+  }
+}
